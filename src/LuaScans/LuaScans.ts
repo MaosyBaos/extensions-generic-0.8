@@ -10,10 +10,10 @@ import {
     MangaStream
 } from '../MangaStream'
 
-const DOMAIN = 'https://luascans.com'
+const DOMAIN = 'https://luacomic.com'
 
 export const LuaScansInfo: SourceInfo = {
-    version: getExportVersion('0.0.0'),
+    version: getExportVersion('0.0.1'),
     name: 'LuaScans',
     description: `Extension that pulls manga from ${DOMAIN}`,
     author: 'Netsky',
@@ -32,4 +32,4 @@ export class LuaScans extends MangaStream {
     override configureSections() {
         this.homescreen_sections['new_titles'].enabled = false
     }
-}
+} 
